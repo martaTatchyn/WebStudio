@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+  font-family: Roboto;
+}
+
+.header {
+  width: 1600px;
+height: 80px;
+}
+
+.logo {
+  font-family: Raleway;
+font-weight: 700;
+font-size: 26px;
+letter-spacing: 0.03em;
+color: #2196f3;
+}
+
+.Studio {
+  color: #000;
+}
+
+.navigation-link {
+  font-weight: 500;
+font-size: 14px;
+letter-spacing: 0.02em;
+color: #212121;
+text-decoration: none;
+}
+
+.navigation-link:hover {
+  font-weight: 500;
+font-size: 14px;
+letter-spacing: 0.02em;
+color: #2196f3;
+}
+
+.address-item {
+  font-weight: 500;
+font-size: 14px;
+letter-spacing: 0.02em;
+color: #757575;
+}
+
+.address-item:hover {
+  font-weight: 500;
+font-size: 14px;
+letter-spacing: 0.02em;
+color: #2196f3;
+}
+
+.big {
+  width: 1600px;
+height: 600px;
+background: #2f303a;
+}
+
+.big-title {
+  font-weight: 900;
+font-size: 44px;
+line-height: 136%;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+text-align: center;
+color: #fff;
+}
+
+.big-button {
+  font-weight: 700;
+font-size: 16px;
+line-height: 187%;
+letter-spacing: 0.06em;
+text-align: center;
+color: #fff;
+border-radius: 4px;
+width: 216px;
+height: 50px;
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+background: #2196f3;
+}
+
+.paragrafs-title {
+  font-weight: 700;
+font-size: 14px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #212121;
+}
+
+.paragrafs-paragraf {
+  font-weight: 400;
+font-size: 14px;
+line-height: 171%;
+letter-spacing: 0.03em;
+color: #757575;
+}
+
+.gallery-title {
+  font-weight: 700;
+font-size: 36px;
+letter-spacing: 0.03em;
+text-align: center;
+color: #212121;
+}
+
+.gallery-img {
+  width: 370px;
+height: 294px;
+}
+
+.team-title {
+  font-weight: 700;
+font-size: 36px;
+letter-spacing: 0.03em;
+text-align: center;
+color: #212121;
+}
+
+.team {
+  width: 1600px;
+height: 648px;
+background: #f5f4fa;
+}
+
+.team-item {
+  border-radius: 0 0 4px 4px;
+  width: 270px;
+  height: 368px;
+  background: #fff;
+}
+
+.team-img {
+  width: 270px;
+height: 260px;
+}
+
+.img-name {
+  font-weight: 500;
+font-size: 16px;
+letter-spacing: 0.03em;
+text-align: center;
+color: #212121;
+}
+
+.img-desscription {
+  font-weight: 400;
+font-size: 16px;
+letter-spacing: 0.03em;
+text-align: center;
+color: #757575;
+}
+
+.footer {
+  width: 1600px;
+height: 252px;
+background: #2f303a;
+}
+
+.footer-name {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+}
+
+.footer-box {
+  color: #fff;
+}
+
+.address-item {
+  font-weight: 400;
+font-size: 14px;
+line-height: 171%;
+letter-spacing: 0.03em;
+color: #fff;
+}
+
+.address-email {
+  font-weight: 400;
+font-size: 14px;
+line-height: 171%;
+letter-spacing: 0.03em;
+color: rgba(255, 255, 255, 0.6);
+}
+
+.address-phone {
+  font-weight: 400;
+font-size: 14px;
+line-height: 171%;
+letter-spacing: 0.03em;
+color: rgba(255, 255, 255, 0.6);
+}
