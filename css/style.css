@@ -9,7 +9,7 @@ body {
 height: 80px;
 }
 
-.logo {
+.header-logo {
   font-family: Raleway;
 font-weight: 700;
 font-size: 26px;
@@ -191,4 +191,70 @@ font-size: 14px;
 line-height: 171%;
 letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
+}
+
+.buttons-list {
+  width: 575px;
+height: 54px;
+}
+
+.buttons-item {
+  border-radius: 4px;
+width: 125px;
+height: 38px;
+background: #f5f4fa;
+}
+
+.buttons-item:hover {
+  border-radius: 4px;
+width: 73px;
+height: 38px;
+box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
+background: #2196f3;
+}
+
+.buttons-button {
+  font-weight: 500;
+font-size: 16px;
+line-height: 162%;
+letter-spacing: 0.03em;
+text-align: center;
+color: #212121;
+}
+
+.buttons-button:hover {
+  font-weight: 500;
+font-size: 16px;
+line-height: 162%;
+letter-spacing: 0.03em;
+text-align: center;
+color: #fff;
+}
+
+.album-item {
+  border: 1px solid #eee;
+width: 370px;
+height: 404px;
+background: #fff;
+}
+
+.album-image {
+  width: 370px;
+height: 294px;
+}
+
+.album-name {
+  font-weight: 700;
+font-size: 18px;
+line-height: 200%;
+letter-spacing: 0.06em;
+color: #212121;
+}
+
+.album-description {
+  font-weight: 400;
+font-size: 16px;
+line-height: 187%;
+letter-spacing: 0.03em;
+color: #757575;
 }
