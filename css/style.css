@@ -4,11 +4,6 @@ body {
   font-family: Roboto;
 }
 
-.header {
-  width: 1600px;
-height: 80px;
-}
-
 .header-logo {
   font-family: Raleway;
 font-weight: 700;
@@ -48,12 +43,6 @@ color: #757575;
 font-size: 14px;
 letter-spacing: 0.02em;
 color: #2196f3;
-}
-
-.big {
-  width: 1600px;
-height: 600px;
-background: #2f303a;
 }
 
 .big-title {
@@ -117,12 +106,6 @@ text-align: center;
 color: #212121;
 }
 
-.team {
-  width: 1600px;
-height: 648px;
-background: #f5f4fa;
-}
-
 .team-item {
   border-radius: 0 0 4px 4px;
   width: 270px;
@@ -151,12 +134,6 @@ text-align: center;
 color: #757575;
 }
 
-.footer {
-  width: 1600px;
-height: 252px;
-background: #2f303a;
-}
-
 .footer-name {
   font-family: Raleway;
   font-weight: 700;
@@ -182,7 +159,7 @@ color: #fff;
 font-size: 14px;
 line-height: 171%;
 letter-spacing: 0.03em;
-color: rgba(255, 255, 255, 0.6);
+color: #757575;
 }
 
 .address-phone {
@@ -190,7 +167,7 @@ color: rgba(255, 255, 255, 0.6);
 font-size: 14px;
 line-height: 171%;
 letter-spacing: 0.03em;
-color: rgba(255, 255, 255, 0.6);
+color: #757575;
 }
 
 .buttons-list {
@@ -199,18 +176,7 @@ height: 54px;
 }
 
 .buttons-item {
-  border-radius: 4px;
-width: 125px;
-height: 38px;
-background: #f5f4fa;
-}
-
-.buttons-item:hover {
-  border-radius: 4px;
-width: 73px;
-height: 38px;
-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
-background: #2196f3;
+ display: inline-block;
 }
 
 .buttons-button {
@@ -220,6 +186,9 @@ line-height: 162%;
 letter-spacing: 0.03em;
 text-align: center;
 color: #212121;
+border-radius: 4px;
+background: #f5f4fa;
+padding: 6px 22px;
 }
 
 .buttons-button:hover {
@@ -229,9 +198,15 @@ line-height: 162%;
 letter-spacing: 0.03em;
 text-align: center;
 color: #fff;
+border-radius: 4px;
+box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
+background: #2196f3;
+padding: 6px 25px;
 }
 
 .album-item {
+  display: inline-block;
+  margin: 15px;
   border: 1px solid #eee;
 width: 370px;
 height: 404px;
@@ -249,6 +224,7 @@ font-size: 18px;
 line-height: 200%;
 letter-spacing: 0.06em;
 color: #212121;
+padding: 0 15px;
 }
 
 .album-description {
@@ -257,4 +233,11 @@ font-size: 16px;
 line-height: 187%;
 letter-spacing: 0.03em;
 color: #757575;
+padding: 0 15px;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
