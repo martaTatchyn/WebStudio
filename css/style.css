@@ -111,6 +111,8 @@ color: #212121;
   width: 270px;
   height: 368px;
   background: #fff;
+  display: inline-block;
+  margin: 0 15px;
 }
 
 .team-img {
