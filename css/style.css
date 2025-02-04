@@ -64,6 +64,7 @@ color: #2196f3;
 font-size: 14px;
 letter-spacing: 0.02em;
 color: #757575;
+font-style: normal;
 }
 
 .header-address-item:hover {
@@ -238,6 +239,7 @@ font-size: 14px;
 line-height: 171%;
 letter-spacing: 0.03em;
 color: #fff;
+font-style: normal;
 }
 
 .address-email {
@@ -246,6 +248,7 @@ font-size: 14px;
 line-height: 171%;
 letter-spacing: 0.03em;
 color: #757575;
+font-style: normal;
 }
 
 .address-phone {
@@ -254,6 +257,11 @@ font-size: 14px;
 line-height: 171%;
 letter-spacing: 0.03em;
 color: #757575;
+font-style: normal;
+}
+
+.buttons {
+  padding-top: 94px;
 }
 
 .buttons-list {
@@ -294,14 +302,22 @@ box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 
 background: #2196f3;
 }
 
+.album{
+  padding-top:34px; 
+  padding-bottom: 94px;
+}
+
 .album-list {
   display: flex;
   flex-wrap: wrap;
+  padding: 0;
+  justify-content: space-between;
+  align-content: space-around;
+  height: 1266px;
 }
 
 .album-item {
   list-style: none;
-  margin: 15px;
   border: 1px solid #eee;
 width: 370px;
 height: 404px;
