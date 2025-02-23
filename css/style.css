@@ -4,6 +4,10 @@ body {
   font-family: Roboto;
 }
 
+ul {
+  padding: 0;
+}
+
 .header-logo {
   font-family: Raleway;
 font-weight: 700;
@@ -12,8 +16,9 @@ letter-spacing: 0.03em;
 color: #2196f3;
 }
 
-header {
+.header {
   height: 80px;
+  border: 1px solid #ececec;
 }
 
 .Studio {
@@ -74,8 +79,14 @@ letter-spacing: 0.02em;
 color: #2196f3;
 }
 
+.gradient {
+  background-color: rgba(47, 48, 58, 0.4);
+  margin: 0 auto;
+height: 600px;
+}
+
 .big {
-background: #2f303a;
+background: url(../w1/people.png) center/cover no-repeat;
 margin: 0 auto;
 height: 600px;
 }
@@ -129,8 +140,10 @@ color: #212121;
   justify-content: space-between;
 }
 
-.paragrafs-item {
+.paragrafs-item{
   list-style: none;
+  width: 270px;
+height: 248px;
 }
 
 .paragrafs-paragraf {
@@ -139,11 +152,6 @@ font-size: 14px;
 line-height: 171%;
 letter-spacing: 0.03em;
 color: #757575;
-}
-
-
-.gallery {
-  padding-bottom: 94px;
 }
 
 .gallery-list {
@@ -169,7 +177,9 @@ height: 294px;
 }
 
 .team {
+  background: #f5f4fa;
   padding-bottom: 94px;
+  padding-top: 94px;
 }
 
 .team-title {
@@ -178,6 +188,7 @@ font-size: 36px;
 letter-spacing: 0.03em;
 text-align: center;
 color: #212121;
+margin: 0;
 }
 
 .team-list {
