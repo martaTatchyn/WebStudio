@@ -133,6 +133,12 @@ border: none;
   padding: 94px 0;
 }
 
+.paragrafs-image {
+  border-radius: 4px;
+width: 270px;
+height: 120px;
+}
+
 .paragrafs-title {
   font-weight: 700;
 font-size: 14px;
