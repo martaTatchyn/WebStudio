@@ -64,21 +64,31 @@ letter-spacing: 0.02em;
 color: #2196f3;
 }
 
-.header-address-list{
+.header-address-list {
   display: flex;
   gap: 50px;
   list-style: none;
 }
 
-.header-address-item {
+.header-address-item svg {
+  fill: #757575;
+}
+
+.header-address-item:hover svg {
+  fill: #2196f3;
+}
+
+.header-address-item-link {
   font-weight: 500;
 font-size: 14px;
 letter-spacing: 0.02em;
 color: #757575;
 font-style: normal;
+text-decoration: none;
+padding-left: 10px;
 }
 
-.header-address-item:hover {
+.header-address-item-link:hover {
   font-weight: 500;
 font-size: 14px;
 letter-spacing: 0.02em;
@@ -153,7 +163,7 @@ color: #212121;
   justify-content: space-between;
 }
 
-.paragrafs-item{
+.paragrafs-item {
   list-style: none;
   width: 270px;
 height: 248px;
@@ -218,10 +228,32 @@ margin-bottom: 50px;
 .team-item {
   border-radius: 0 0 4px 4px;
   width: 270px;
-  height: 368px;
+  height: 428px;
   background: #fff;
   list-style: none;
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+}
+
+.team-item-list {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  justify-content: space-between;
+  padding: 16px 32px;
+}
+
+.team-item-list-icons {
+  height: 20px;
+  width: 20px;
+  padding: 12px;
+  border-radius: 100%;
+  fill: #afb1b8;
+}
+
+.team-item-list-icons:hover {
+  fill: white;
+  background-color: #2196F3;
+  cursor: pointer;
 }
 
 .team-img {
@@ -245,11 +277,55 @@ text-align: center;
 color: #757575;
 }
 
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #212121;
+  margin: 0;
+  padding-top: 94px;
+}
+
+.clients-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 50px 0 94px 0;
+}
+
+.clients-client {
+  fill: #afb1b8;
+  width: 106px;
+  height: 60px;
+  padding: 16px 32px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;  
+}
+
+.clients-client:hover {
+  fill: #2196F3;
+  width: 106px;
+  height: 60px;
+  padding: 16px 32px;
+  border: 1px solid #2196F3;
+  border-radius: 4px;  
+  cursor: pointer;
+}
+
 .footer {
   background: #2f303a;
   height: 252px;
   display: flex;
   align-items: center;
+}
+
+.footer-content {
+  display: flex;
+  gap: 70px;
+  padding-top: 60px;
 }
 
 .footer-name {
@@ -258,6 +334,7 @@ color: #757575;
   font-size: 26px;
   letter-spacing: 0.03em;
   color: #2196f3;
+  margin-top: 0;
 }
 
 .footer-box {
@@ -289,6 +366,38 @@ line-height: 171%;
 letter-spacing: 0.03em;
 color: #757575;
 font-style: normal;
+}
+
+.part-two-title {
+  font-weight: 700;
+font-size: 14px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #fff;
+}
+
+.part-two-list {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+.part-two-list-icons {
+  height: 20px;
+  width: 20px;
+  padding: 12px;
+  border-radius: 100%;
+  fill: white;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.part-two-list-icons:hover {
+  height: 20px;
+  width: 20px;
+  padding: 12px;
+  border-radius: 100%;
+  fill: white;
+  background-color: #2196f3;
 }
 
 .buttons {
@@ -334,7 +443,7 @@ background: #2196f3;
 cursor: pointer;
 }
 
-.album{
+.album {
   padding-top:34px; 
   padding-bottom: 94px;
 }
@@ -355,6 +464,17 @@ width: 370px;
 height: 404px;
 background: #fff;
 display: inline-block;
+}
+
+.album-item:hover {
+  list-style: none;
+  border: 1px solid #eee;
+width: 370px;
+height: 404px;
+box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+background: #fff;
+display: inline-block;
+cursor: pointer;
 }
 
 .album-image {
