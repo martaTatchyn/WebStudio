@@ -102,13 +102,13 @@ cursor: pointer;
 height: 600px;
 }
 
-.big {
+.hero {
 background: url(../w1/people.jpg) center/cover no-repeat;
 margin: 0 auto;
 height: 600px;
 }
 
-.big-title {
+.hero-title {
   font-weight: 900;
 font-size: 44px;
 line-height: 136%;
@@ -124,7 +124,7 @@ margin: auto;
 padding: 200px 0 30px;
 }
 
-.big-button {
+.hero-button {
   font-weight: 700;
 font-size: 16px;
 line-height: 187%;
@@ -138,6 +138,7 @@ padding: 10px 32px;
 display: block;
 margin: auto;
 border: none;
+cursor: pointer;
 }
 
 .paragrafs {
@@ -347,7 +348,7 @@ color: #757575;
 .footer-content {
   display: flex;
   gap: 70px;
-  padding-top: 60px;
+  align-items: center;
 }
 
 .footer-name {
@@ -420,6 +421,50 @@ color: #fff;
   border-radius: 100%;
   fill: white;
   background-color: #2196f3;
+}
+
+.part-three-title {
+font-weight: 700;
+font-size: 14px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #fff;
+}
+
+.part-three-input {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  width: 358px;
+  height: 50px;
+outline: none;
+background: transparent;
+padding: 0;
+margin-right: 8px;
+}
+
+.part-three-input::placeholder {
+font-weight: 400;
+font-size: 16px;
+line-height: 125%;
+letter-spacing: 0.03em;
+color: rgba(255, 255, 255, 0.6);
+padding-left: 16px;
+}
+
+.part-three-btn {
+font-weight: 700;
+font-size: 16px;
+line-height: 187%;
+letter-spacing: 0.06em;
+text-align: center;
+color: #fff;
+border-radius: 4px;
+width: 200px;
+height: 52px;
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+background: #2196f3;
+border: none;
+cursor: pointer;
 }
 
 .buttons {
@@ -522,3 +567,178 @@ color: #757575;
 padding: 0 15px;
 }
 
+.bacdrop {
+  background: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.modal {
+  border-radius: 4px;
+width: 528px;
+height: 581px;
+box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+background: #fff;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+z-index: 10;
+}
+
+.modal-close {
+  border-radius: 100%;
+fill: #fff;
+width: 30px;
+height: 30px;
+background: transparent;
+border: 1px solid rgba(0, 0, 0, 0.1);
+position: absolute;
+top: 8px;
+right: 8px;
+cursor: pointer;
+}
+
+.modal-close:hover i {
+  color: #2196f3;
+}
+
+.modal-title {
+font-weight: 700;
+font-size: 20px;
+letter-spacing: 0.03em;
+text-align: center;
+color: #212121;
+padding-top: 40px;
+margin: 0;
+}
+
+.modal-field {
+  width: 448px;
+height: 58px;
+margin: 10px auto;
+}
+
+.modal-textarea {
+  width: 448px;
+height: 138px;
+margin: 10px auto;
+}
+
+.modal-checkbox {
+  width: 425px;
+height: 24px;
+margin: 20px auto;
+display: flex;
+gap: 8px;
+}
+
+.form-label {
+  font-weight: 400;
+font-size: 12px;
+letter-spacing: 0.01em;
+color: #757575;
+}
+
+.input-container {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  width: 448px;
+  height: 40px;
+  display: flex;
+}
+
+.input-container:focus-within {
+  border: 1px solid #2196f3;
+}
+
+.input-container:focus-within .fa-user {
+  color: #2196f3;
+}
+
+.input-container:focus-within .fa-phone {
+  color: #2196f3;
+}
+
+.input-container:focus-within .fa-envelope {
+  color: #2196f3;
+}
+
+.fa-user, .fa-phone, .fa-envelope {
+  width:18px;
+  height:18px;
+  margin: 11px 12px;
+}
+
+.form-input {
+  border: none;
+width: 406px;
+height: 36px;
+outline: none;
+}
+
+.textarea-container {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  width: 448px;
+  height: 120px;
+}
+
+.textarea-container:focus-within {
+  border: 1px solid #2196f3;
+}
+
+.form-textarea {
+  width: 416px;
+  height: 96px;
+  resize: none;
+  border: none;
+  margin: 12px 16px;
+  outline: none;
+}
+
+.form-textarea::placeholder  {
+  font-weight: 400;
+font-size: 12px;
+letter-spacing: 0.01em;
+color: rgba(117, 117, 117, 0.5);
+}
+
+.checkbox-label {
+  font-weight: 400;
+font-size: 14px;
+line-height: 171%;
+letter-spacing: 0.03em;
+color: #757575;
+}
+
+.contract-terms {
+  text-decoration: underline;
+text-decoration-skip-ink: none;
+color: #2196f3;
+}
+
+.form-btn {
+  width: 200px;
+height: 50px;
+font-weight: 700;
+font-size: 16px;
+line-height: 187%;
+letter-spacing: 0.06em;
+text-align: center;
+color: #fff;
+border-radius: 4px;
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+background: #2196f3;
+border: none;
+margin: 0 164px;
+}

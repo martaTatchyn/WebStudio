@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>WebStudio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
@@ -39,11 +39,11 @@
       </div>
     </header>
     <main>
-      <section class="big">
+      <section class="hero">
        <div class="gradient">
        <div class="container">
-        <h1 class="big-title">Ефективні рішення для вашого бізнесу</h1>
-        <button class="big-button">Замовити послугу</button>
+        <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+        <button data-open-modal class="hero-button">Замовити послугу</button>
        </div>
        </div>
       </section>
@@ -265,6 +265,60 @@
         </ul>
         </div>
       </section>
+      <div class="bacdrop is-hidden">
+        <div class="modal">
+          <button class="modal-close">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <h3 class="modal-title">Залиште свої дані, ми вам передзвонимо</h3>
+          <form class="modal-form">
+            <ul class="form-list">
+              <li class="form-item">
+                <div class="modal-field">
+                  <label class="form-label" for="name">Ім'я</label>
+                  <div class="input-container">
+                    <i class="fa-solid fa-user"></i>
+                    <input class="form-input" name="name" type="text">
+                  </div>
+                </div>
+              </li>
+              <li class="form-item">
+                <div class="modal-field">
+                  <label class="form-label" for="phone">Телефон</label>
+                  <div class="input-container">
+                    <i class="fa-solid fa-phone"></i>
+                    <input class="form-input" name="phone" type="phone">
+                  </div>
+                </div>
+              </li>
+              <li class="form-item">
+                <div class="modal-field">
+                  <label class="form-label" for="email">Пошта</label>
+                  <div class="input-container">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input class="form-input" name="email" type="email">
+                  </div>
+                </div>
+              </li>
+              <li class="form-item">
+                <div class="modal-textarea">
+                  <label class="form-label" for="massage">Коментар</label>
+                  <div class="textarea-container">
+                    <textarea class="form-textarea" name="massage" placeholder="Введіть текст"></textarea>
+                  </div>
+                </div>
+              </li>
+              <li class="form-item">
+                <div class="modal-checkbox">
+                  <input class="form-checkbox" name="contract" type="checkbox"></input>
+                  <label class="checkbox-label" for="contract">Погоджуюся з розсилкою та приймаю <a class="contract-terms" href="#">Умови договору</a></label>
+                </div>
+              </li>
+            </ul>
+            <button type="submit" class="form-btn">Відправити</button>
+          </form>
+        </div>
+      </div>
     </main>
     <footer class="footer">
       <div class="container">
@@ -304,8 +358,16 @@
         </li>
       </ul>
         </div>
+        <div class="part-three">
+          <h3 class="part-three-title">Підпишіться на розсилку</h3>
+          <input class="part-three-input" type="text" placeholder="E-mail">
+          <button class="part-three-btn">
+            Підписатися <i class="fa-sharp fa-solid fa-paper-plane"></i></button>
+        </div>
       </div>
     </div>
     </footer>
+    <script src="https://kit.fontawesome.com/e88f049ac4.js" crossorigin="anonymous"></script>
+      <script src="./js/script.js"></script>
     </body>
 </html>
