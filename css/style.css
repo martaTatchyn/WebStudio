@@ -32,7 +32,7 @@ color: #2196f3;
   border: 1px solid #ececec;
 }
 
-.Studio {
+.studio {
   color: #000;
 }
 
@@ -136,6 +136,7 @@ color: #2196f3;
 
 .header-address-item svg {
   fill: #757575;
+  transition: fill 0.5s;
 }
 
 .header-address-item:hover svg {
@@ -150,6 +151,7 @@ color: #757575;
 font-style: normal;
 text-decoration: none;
 padding-left: 10px;
+transition: color 0.5s;
 }
 
 .header-address-item-link:hover {
@@ -335,6 +337,7 @@ margin-bottom: 50px;
   padding: 12px;
   border-radius: 100%;
   fill: #afb1b8;
+  transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-item-list-icons:hover {
@@ -390,6 +393,7 @@ color: #757575;
   padding: 16px 32px;
   border: 1px solid #afb1b8;
   border-radius: 4px; 
+  transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-client:hover {
@@ -476,6 +480,7 @@ color: #fff;
   border-radius: 100%;
   fill: white;
   background-color: rgba(255, 255, 255, 0.1);
+  transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .part-two-list-icons:hover {
