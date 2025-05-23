@@ -4,6 +4,10 @@ body {
   font-family: Roboto;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   width: 1170px;
   margin: 0 auto;
@@ -12,6 +16,7 @@ body {
 
 ul {
   padding: 0;
+  list-style: none;
 }
 
 .header-logo {
@@ -55,6 +60,9 @@ font-size: 14px;
 letter-spacing: 0.02em;
 color: #212121;
 text-decoration: none;
+position: relative;
+transition: 0.4s;
+display: inline-block;
 }
 
 .navigation-link:hover {
@@ -62,6 +70,62 @@ text-decoration: none;
 font-size: 14px;
 letter-spacing: 0.02em;
 color: #2196f3;
+}
+
+.navigation-link::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #2196f3;
+  position: absolute;
+  left: 0;
+  bottom: -31px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s;
+}
+
+.navigation-link:hover::after {
+  transform: scaleX(1);
+}
+
+.studio-link {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+
+.studio-link::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #2196f3;
+  position: absolute;
+  left: 0;
+  bottom: -31px;
+  transform: scaleX(1);
+}
+
+.portfolio-link {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+
+.portfolio-link::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #2196f3;
+  position: absolute;
+  left: 0;
+  bottom: -31px;
+  transform: scaleX(1);
 }
 
 .header-address-list {
@@ -325,7 +389,7 @@ color: #757575;
   height: 60px;
   padding: 16px 32px;
   border: 1px solid #afb1b8;
-  border-radius: 4px;  
+  border-radius: 4px; 
 }
 
 .clients-client:hover {
@@ -440,6 +504,7 @@ outline: none;
 background: transparent;
 padding: 0;
 margin-right: 8px;
+color: rgba(255, 255, 255, 0.3);
 }
 
 .part-three-input::placeholder {
@@ -495,6 +560,7 @@ border-radius: 4px;
 background: #f5f4fa;
 padding: 6px 22px;
 border: none;
+transition: 0.3s;
 }
 
 .buttons-button:hover {
@@ -525,12 +591,14 @@ cursor: pointer;
 }
 
 .album-item {
+  position: relative;
   list-style: none;
   border: 1px solid #eee;
 width: 370px;
 height: 404px;
 background: #fff;
 display: inline-block;
+overflow: hidden;
 }
 
 .album-item:hover {
@@ -542,6 +610,28 @@ box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 
 background: #fff;
 display: inline-block;
 cursor: pointer;
+transition: 0.3s;
+}
+
+.album-item-overlay {
+  position: absolute;
+  font-weight: 400;
+font-size: 18px;
+line-height: 156%;
+letter-spacing: 0.03em;
+color: #fff;
+width: 370px;
+height: 294px;
+background: rgba(33, 150, 243, 0.9);
+display: flex;
+align-items: center;
+justify-content: center;
+transform: translateY(-100%);
+transition: 0.5s;
+}
+
+.album-item:hover .album-item-overlay {
+  transform: translateY(0);
 }
 
 .album-image {
