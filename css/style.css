@@ -32,7 +32,7 @@ color: #2196f3;
   border: 1px solid #ececec;
 }
 
-.studio {
+.header-studio {
   color: #000;
 }
 
@@ -54,7 +54,7 @@ color: #2196f3;
   gap: 50px;
 }
 
-.navigation-link {
+.header-navigation {
   font-weight: 500;
 font-size: 14px;
 letter-spacing: 0.02em;
@@ -65,14 +65,14 @@ transition: 0.4s;
 display: inline-block;
 }
 
-.navigation-link:hover {
+.header-navigation:hover {
   font-weight: 500;
 font-size: 14px;
 letter-spacing: 0.02em;
 color: #2196f3;
 }
 
-.navigation-link::after {
+.header-navigation::after {
   content: "";
   width: 100%;
   height: 4px;
@@ -86,7 +86,7 @@ color: #2196f3;
   transition: transform 0.4s;
 }
 
-.navigation-link:hover::after {
+.header-navigation:hover::after {
   transform: scaleX(1);
 }
 
@@ -143,7 +143,7 @@ color: #2196f3;
   fill: #2196f3;
 }
 
-.header-address-item-link {
+.header-link {
   font-weight: 500;
 font-size: 14px;
 letter-spacing: 0.02em;
@@ -154,7 +154,7 @@ padding-left: 10px;
 transition: color 0.5s;
 }
 
-.header-address-item-link:hover {
+.header-link:hover {
   font-weight: 500;
 font-size: 14px;
 letter-spacing: 0.02em;
@@ -432,7 +432,7 @@ color: #757575;
   color: #fff;
 }
 
-.address-item {
+.footer-item {
   font-weight: 400;
 font-size: 14px;
 line-height: 171%;
@@ -441,7 +441,7 @@ color: #fff;
 font-style: normal;
 }
 
-.address-email {
+.footer-email {
   font-weight: 400;
 font-size: 14px;
 line-height: 171%;
@@ -450,7 +450,7 @@ color: #757575;
 font-style: normal;
 }
 
-.address-phone {
+.footer-phone {
   font-weight: 400;
 font-size: 14px;
 line-height: 171%;

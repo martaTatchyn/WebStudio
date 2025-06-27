@@ -1,0 +1,36 @@
+.paragrafs {
+  padding: 94px 0;
+
+  &-image {
+    border-radius: 4px;
+    width: 270px;
+    height: 120px;
+  }
+
+  &-title {
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #212121;
+  }
+
+  &-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-item {
+    list-style: none;
+    width: 270px;
+    height: 248px;
+  }
+
+  &-paragraf {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.03em;
+    color: $third-color;
+  }
+}

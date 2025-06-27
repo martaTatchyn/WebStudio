@@ -1,0 +1,74 @@
+.team {
+  background: #f5f4fa;
+  padding-bottom: 94px;
+  padding-top: 94px;
+
+  &-title {
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #212121;
+    margin-bottom: 50px;
+  }
+
+  &-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  &-item {
+    border-radius: 0 0 4px 4px;
+    width: 270px;
+    height: 428px;
+    background: #fff;
+    list-style: none;
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+      0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  }
+
+  &-item-list {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 16px 32px;
+  }
+
+  &-item-list-icons {
+    height: 20px;
+    width: 20px;
+    padding: 12px;
+    border-radius: 100%;
+    fill: #afb1b8;
+    transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &-item-list-icons:hover {
+    fill: white;
+    background-color: $second-color;
+    cursor: pointer;
+  }
+
+  &-img {
+    width: 270px;
+    height: 260px;
+  }
+}
+
+.img-name {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #212121;
+}
+
+.img-desscription {
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: $third-color;
+}

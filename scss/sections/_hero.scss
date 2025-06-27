@@ -1,0 +1,44 @@
+.gradient {
+  background-color: rgba(47, 48, 58, 0.4);
+  margin: 0 auto;
+  height: 600px;
+}
+
+.hero {
+  background: url(../w1/people.jpg) center/cover no-repeat;
+  margin: 0 auto;
+  height: 600px;
+
+  &-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 136%;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    width: 696px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 200px 0 30px;
+  }
+
+  &-button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 187%;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background: $second-color;
+    padding: 10px 32px;
+    display: block;
+    margin: auto;
+    border: none;
+    cursor: pointer;
+  }
+}

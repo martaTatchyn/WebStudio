@@ -1,0 +1,134 @@
+.footer {
+  background: #2f303a;
+  height: 252px;
+  display: flex;
+  align-items: center;
+
+  &-content {
+    display: flex;
+    gap: 70px;
+    align-items: center;
+  }
+
+  &-name {
+    font-family: $second-family;
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.03em;
+    color: $second-color;
+    margin-top: 0;
+  }
+
+  &-box {
+    color: #fff;
+  }
+
+  &-item {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.03em;
+    color: #fff;
+    font-style: normal;
+  }
+
+  &-email {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.03em;
+    color: $third-color;
+    font-style: normal;
+  }
+
+  &-phone {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.03em;
+    color: $third-color;
+    font-style: normal;
+  }
+}
+
+.part-two {
+  &-title {
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  &-list {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+  }
+
+  &-list-icons {
+    height: 20px;
+    width: 20px;
+    padding: 12px;
+    border-radius: 100%;
+    fill: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &-list-icons:hover {
+    height: 20px;
+    width: 20px;
+    padding: 12px;
+    border-radius: 100%;
+    fill: white;
+    background-color: $second-color;
+  }
+}
+
+.part-three {
+  &-title {
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  &-input {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    width: 358px;
+    height: 50px;
+    outline: none;
+    background: transparent;
+    padding: 0;
+    margin-right: 8px;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &-input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 125%;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    padding-left: 16px;
+  }
+
+  &-btn {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 187%;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: #fff;
+    border-radius: 4px;
+    width: 200px;
+    height: 52px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background: $second-color;
+    border: none;
+    cursor: pointer;
+  }
+}

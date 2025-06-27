@@ -1,0 +1,140 @@
+.header {
+  height: 80px;
+  border: 1px solid #ececec;
+
+  &-logo {
+    font-family: $second-family;
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.03em;
+    color: $second-color;
+  }
+  &-content {
+    display: flex;
+    align-items: center;
+    gap: 93px;
+  }
+  & .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &-studio {
+    color: $first-color;
+  }
+
+  &-list {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+  }
+
+  &-navigation-link {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: #212121;
+    text-decoration: none;
+    position: relative;
+    transition: 0.4s;
+    display: inline-block;
+  }
+
+  &-navigation-link:hover {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: $second-color;
+  }
+
+  &-navigation-link::after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $second-color;
+    position: absolute;
+    left: 0;
+    bottom: -31px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s;
+  }
+
+  &-navigation-link:hover::after {
+    transform: scaleX(1);
+  }
+
+  &-address-list {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+  }
+
+  &-address-item svg {
+    fill: $third-color;
+    transition: fill 0.5s;
+  }
+
+  &-address-item:hover svg {
+    fill: $second-color;
+  }
+
+  &-link {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: $third-color;
+    font-style: normal;
+    text-decoration: none;
+    padding-left: 10px;
+    transition: color 0.5s;
+  }
+
+  &-link:hover {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: $second-color;
+    cursor: pointer;
+  }
+}
+
+.studio-link {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: $second-color;
+}
+
+.studio-link::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: $second-color;
+  position: absolute;
+  left: 0;
+  bottom: -31px;
+  transform: scaleX(1);
+}
+
+.portfolio-link {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: $second-color;
+}
+
+.portfolio-link::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: $second-color;
+  position: absolute;
+  left: 0;
+  bottom: -31px;
+  transform: scaleX(1);
+}
