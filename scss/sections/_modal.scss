@@ -42,7 +42,7 @@
   transform: translate(-50%, -50%);
   z-index: 10;
 
-  &-close {
+  &__close {
     border-radius: 100%;
     fill: #fff;
     width: 30px;
@@ -56,11 +56,11 @@
     transition: 0.3s;
   }
 
-  &-close:hover i {
+  &__close:hover i {
     color: $second-color;
   }
 
-  &-title {
+  &__title {
     font-weight: 700;
     font-size: 20px;
     letter-spacing: 0.03em;
@@ -70,19 +70,19 @@
     margin: 0;
   }
 
-  &-field {
+  &__field {
     width: 448px;
     height: 58px;
     margin: 10px auto;
   }
 
-  &-textarea {
+  &__textarea {
     width: 448px;
     height: 138px;
     margin: 10px auto;
   }
 
-  &-checkbox {
+  &__checkbox {
     width: 425px;
     height: 24px;
     margin: 20px auto;

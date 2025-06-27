@@ -1,7 +1,7 @@
 .buttons {
     padding-top: 94px;
 
-    &-list {
+    &__list {
         width: 575px;
       height: 54px;
       display: flex;
@@ -9,12 +9,12 @@
       gap: 8px;
       }
       
-      &-item {
+      &__item {
        list-style: none;
        display: block;
       }
       
-      &-button {
+      &__button {
         font-weight: 500;
       font-size: 16px;
       line-height: 162%;
@@ -28,7 +28,7 @@
       transition: 0.3s;
       }
       
-      &-button:hover {
+      &__button:hover {
         font-weight: 500;
       font-size: 16px;
       line-height: 162%;

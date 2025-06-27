@@ -1,20 +1,20 @@
 .gallery {
   margin-bottom: 94px;
 
-  &-list {
+  &__list {
     display: flex;
     justify-content: space-between;
     margin: 0;
   }
 
-  &-item {
+  &__item {
     list-style: none;
     width: 370px;
     height: 294px;
     position: relative;
   }
 
-  &-title {
+  &__title {
     font-weight: 700;
     font-size: 36px;
     letter-spacing: 0.03em;
@@ -22,12 +22,12 @@
     color: #212121;
   }
 
-  &-img {
+  &__img {
     width: 370px;
     height: 294px;
   }
 
-  &-item-name {
+  &__item-name {
     display: flex;
     justify-content: center;
     align-items: center;

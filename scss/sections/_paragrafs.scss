@@ -1,13 +1,13 @@
 .paragrafs {
   padding: 94px 0;
 
-  &-image {
+  &__image {
     border-radius: 4px;
     width: 270px;
     height: 120px;
   }
 
-  &-title {
+  &__title {
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 0.03em;
@@ -15,18 +15,18 @@
     color: #212121;
   }
 
-  &-list {
+  &__list {
     display: flex;
     justify-content: space-between;
   }
 
-  &-item {
+  &__item {
     list-style: none;
     width: 270px;
     height: 248px;
   }
 
-  &-paragraf {
+  &__paragraf {
     font-weight: 400;
     font-size: 14px;
     line-height: 171%;

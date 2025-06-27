@@ -2,7 +2,7 @@
     padding-top:34px; 
     padding-bottom: 94px;
 
-    &-list {
+    &__list {
         display: flex;
         flex-wrap: wrap;
         padding: 0;
@@ -11,7 +11,7 @@
         height: 1266px;
       }
       
-      &-item {
+      &__item {
         position: relative;
         list-style: none;
         border: 1px solid #eee;
@@ -22,7 +22,7 @@
       overflow: hidden;
       }
       
-      &-item:hover {
+      &__item:hover {
         list-style: none;
         border: 1px solid #eee;
       width: 370px;
@@ -34,7 +34,7 @@
       transition: 0.3s;
       }
       
-      &-item-overlay {
+      &__item-overlay {
         position: absolute;
         font-weight: 400;
       font-size: 18px;
@@ -52,16 +52,16 @@
       transition: 0.5s;
       }
       
-      &-item:hover &-item-overlay {
+      &__item:hover &-item-overlay {
         transform: scaleY(1);
       }
       
-      &-image {
+      &__image {
         width: 370px;
       height: 294px;
       }
       
-      &-name {
+      &__name {
         font-weight: 700;
       font-size: 18px;
       line-height: 200%;
@@ -70,7 +70,7 @@
       padding: 0 15px;
       }
       
-      &-description {
+      &__description {
         font-weight: 400;
       font-size: 16px;
       line-height: 187%;

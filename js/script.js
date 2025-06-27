@@ -1,6 +1,6 @@
 const btncOpenModal = document.querySelectorAll("[data-open-modal]")
 const bacdrop = document.querySelector(".bacdrop")
-const btncCloseModal = document.querySelector(".modal-close")
+const btncCloseModal = document.querySelector(".modal__close")
 const modal = document.querySelector(".modal")
 
 btncOpenModal.forEach((btn) => {
