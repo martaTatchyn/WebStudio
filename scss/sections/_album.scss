@@ -52,7 +52,7 @@
       transition: 0.5s;
       }
       
-      &__item:hover &-item-overlay {
+      &__item:hover .album__item-overlay {
         transform: scaleY(1);
       }
       

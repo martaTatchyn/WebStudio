@@ -16,3 +16,10 @@ body {
     padding: 0;
     list-style: none;
   }
+
+  button {
+    transition: 0.5s;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
