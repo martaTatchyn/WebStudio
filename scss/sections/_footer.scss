@@ -53,11 +53,7 @@
 
 .part-two {
   &__title {
-    font-weight: 700;
-    font-size: 14px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #fff;
+    @include title(#fff);
   }
 
   &__list {
@@ -88,11 +84,7 @@
 
 .part-three {
   &__title {
-    font-weight: 700;
-    font-size: 14px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #fff;
+    @include title(#fff);
   }
 
   &__input {

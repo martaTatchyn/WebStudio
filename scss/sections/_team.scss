@@ -4,11 +4,7 @@
   padding-top: 94px;
 
   &__title {
-    font-weight: 700;
-    font-size: 36px;
-    letter-spacing: 0.03em;
-    text-align: center;
-    color: #212121;
+    @include section-title();
     margin-bottom: 50px;
   }
 

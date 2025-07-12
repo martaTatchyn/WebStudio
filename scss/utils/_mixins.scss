@@ -1,9 +1,25 @@
 @mixin section-padding-general($ptDesk, $ptTab, $ptMob) {
-    padding-top: $ptDesk;
-    @media (max-width: 768px) {
-        padding-top: $ptTab;
-    }
-    @media (max-width: 480px) {
-        padding-top: $ptMob;
-    }
+  padding-top: $ptDesk;
+  @media (max-width: 768px) {
+    padding-top: $ptTab;
+  }
+  @media (max-width: 480px) {
+    padding-top: $ptMob;
+  }
+}
+
+@mixin section-title() {
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #212121;
+}
+
+@mixin title($col) {
+font-weight: 700;
+font-size: 14px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: $col;
 }
