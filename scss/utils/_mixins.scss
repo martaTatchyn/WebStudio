@@ -8,6 +8,18 @@
   }
 }
 
+@mixin container(){
+  width: 450px;
+  margin: 0 auto;
+  padding: 0 15px;
+  @media(min-width: 768px) {
+    width: 738px;
+  }
+  @media(min-width: 1200px) {
+    width: 1170px;
+  }
+}
+
 @mixin section-title() {
   font-weight: 700;
   font-size: 36px;
