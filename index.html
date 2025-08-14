@@ -4,46 +4,94 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="./css/style.min.css" />
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <div class="header__content">
-          <h3 class="header__logo">Web<span class="header__studio">Studio</span></h3>
-      <nav class="header__nav">
-        <ul class="header__list">
-          <li><a href="./index.html" class="header__navigation--link studio-link">Студія</a></li>
-          <li><a href="./wbstudio2.html" class="header__navigation--link">Портфоліо</a></li>
-          <li><a href="#" class=" header__navigation--link">Контакти</a></li>
-        </ul>
-      </nav>
-    </div>
-      <address class="header__address">
-        <ul class="header__address--list">
-          <li class="header__address--item"> 
-            <svg width="16" height="12" viewBox="0 0 16 12" aria-label="envelope">
+      <div class="container header__menu">
+        <h3 class="header__logo">
+          Web<span class="header__studio">Studio</span>
+        </h3>
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li>
+              <a
+                href="./index.html"
+                class="header__navigation--link studio-link"
+                >Студія</a
+              >
+            </li>
+            <li>
+              <a href="./wbstudio2.html" class="header__navigation--link"
+                >Портфоліо</a
+              >
+            </li>
+            <li>
+              <a href="#" class="header__navigation--link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="header__address">
+          <div class="header__address--item">
+            <svg
+              width="16"
+              height="12"
+              viewBox="0 0 16 12"
+              aria-label="envelope"
+            >
               <use href="./w1/symbol-defs.svg#icon-envelope"></use>
             </svg>
             <a href="#" class="header__link">info@devstudio.com</a>
-          </li>
-          <li class="header__address--item">
-            <svg width="8" height="12" viewBox="0 0 8 12" aria-label="smartphone">
+          </div>
+          <div class="header__address--item">
+            <svg
+              width="8"
+              height="12"
+              viewBox="0 0 8 12"
+              aria-label="smartphone"
+            >
               <use href="./w1/symbol-defs.svg#icon-smartphone"></use>
             </svg>
             <a href="#" class="header__link">+38 096 111 11 11</a>
-          </li>
-        </ul>
-      </address>
+          </div>
+        </address>
+        <div class="header__social-media">
+          <ul class="header__social-media--list">
+            <li class="header__social-media--link">Instagram</li>
+            <li class="header__social-media--link">
+              <span></span>
+            </li>
+            <li class="header__social-media--link">Twitter</li>
+            <li class="header__social-media--link">
+              <span></span>
+            </li>
+            <li class="header__social-media--link">Facebook</li>
+            <li class="header__social-media--link">
+              <span></span>
+            </li>
+            <li class="header__social-media--link">LinkedIn</li>
+          </ul>
+        </div>
+        <button class="header__burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
     </header>
-    <main>
+    <!-- <main>
       <section class="hero">
        <div class="gradient">
        <div class="container">
@@ -411,12 +459,15 @@
         </div>
       </div>
     </div>
-    </footer>
-    <script src="https://kit.fontawesome.com/e88f049ac4.js" crossorigin="anonymous"></script>
+    </footer> -->
+    <script
+      src="https://kit.fontawesome.com/e88f049ac4.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
-      <script src="./js/script.js"></script>
-    </body>
+    <script src="./js/script.js"></script>
+  </body>
 </html>
