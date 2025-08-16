@@ -1,6 +1,6 @@
 .footer {
   background: #2f303a;
-  height: 252px;
+  height: 100%;
   display: flex;
   align-items: center;
 
@@ -8,15 +8,28 @@
     display: flex;
     gap: 70px;
     align-items: center;
+    @media (max-width: 1199px) {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 60px;
+    }
+    @media (max-width: 767px) {
+      flex-direction: column;
+      gap: 60px;
+    }
   }
 
-  &__name {
+  &__logo {
     font-family: $second-family;
     font-weight: 700;
     font-size: 26px;
     letter-spacing: 0.03em;
     color: $second-color;
     margin-top: 0;
+    @media (max-width: 1199px) {
+      text-align: center;
+      margin-top: 60px;
+    }
   }
 
   &__box {
@@ -30,6 +43,9 @@
     letter-spacing: 0.03em;
     color: #fff;
     font-style: normal;
+    @media (max-width: 1199px) {
+      text-align: center;
+    }
   }
 
   &__email {
@@ -39,6 +55,9 @@
     letter-spacing: 0.03em;
     color: $third-color;
     font-style: normal;
+    @media (max-width: 1199px) {
+      text-align: center;
+    }
   }
 
   &__phone {
@@ -48,18 +67,34 @@
     letter-spacing: 0.03em;
     color: $third-color;
     font-style: normal;
+    @media (max-width: 1199px) {
+      text-align: center;
+      margin-bottom: 0;
+    }
   }
 }
 
 .part-two {
+  @media (max-width: 1199px) {
+    margin-left: 105px;
+  }
+  @media (max-width: 767px) {
+    margin-left: 0;
+  }
   &__title {
     @include title(#fff);
+    @media (max-width: 1199px) {
+      text-align: center;
+      margin-bottom: 20px;
+      margin-top: 0;
+    }
   }
 
   &__list {
     list-style: none;
     display: flex;
     gap: 10px;
+    margin: 0;
   }
 
   &__list-icons {
@@ -83,8 +118,18 @@
 }
 
 .part-three {
+  @media (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
   &__title {
     @include title(#fff);
+    @media (max-width: 1199px) {
+      text-align: center;
+      margin: 0;
+    }
   }
 
   &__input {
@@ -97,6 +142,9 @@
     padding: 0;
     margin-right: 8px;
     color: rgba(255, 255, 255, 0.6);
+    @media (max-width: 1199px) {
+      width: 450px;
+    }
   }
 
   &__input::placeholder {
@@ -122,5 +170,8 @@
     background: $second-color;
     border: none;
     cursor: pointer;
+    @media (max-width: 1199px) {
+      margin-bottom: 60px;
+        }
   }
 }

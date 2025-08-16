@@ -2,12 +2,18 @@
   background-color: rgba(47, 48, 58, 0.4);
   margin: 0 auto;
   height: 600px;
+  @media (max-width: 767px) {
+    height: 400px;
+  }
 }
 
 .hero {
   background: url(../w1/people.jpg) center/cover no-repeat;
   margin: 0 auto;
   height: 600px;
+  @media (max-width: 767px) {
+    height: 400px;
+  }
 
   &__title {
     font-weight: 900;
@@ -17,12 +23,16 @@
     text-transform: uppercase;
     text-align: center;
     color: #fff;
-    width: 696px;
-    height: 120px;
     display: flex;
     justify-content: center;
     margin: auto;
     padding: 200px 0 30px;
+    @media (max-width: 767px) {
+      font-weight: 900;
+      font-size: 26px;
+      line-height: 162%;
+      padding: 118px 0 30px;
+    }
   }
 
   &__button {
@@ -40,6 +50,8 @@
     margin: auto;
     border: none;
     cursor: pointer;
+    @media (max-width: 1199px) {
+      padding: 10px 24px;
+    }
   }
-
 }

@@ -1,6 +1,9 @@
 .album {
   padding-top: 34px;
   padding-bottom: 94px;
+  @media (max-width: 1199px) {
+    padding-bottom: 60px;
+  }
 
   &__list {
     padding: 0;
@@ -10,10 +13,10 @@
     row-gap: 30px;
     margin: 0;
     @media (max-width: 1199px) {
-    grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
     }
     @media (max-width: 767px) {
-    grid-template-columns: 1fr;
+      grid-template-columns: 1fr;
     }
   }
 
@@ -21,8 +24,8 @@
     position: relative;
     list-style: none;
     border: 1px solid #eee;
-    width: 370px;
-    height: 404px;
+    width: 100%;
+    height: 100%;
     background: #fff;
     display: inline-block;
     overflow: hidden;
@@ -48,8 +51,8 @@
     line-height: 156%;
     letter-spacing: 0.03em;
     color: #fff;
-    width: 370px;
-    height: 294px;
+    width: 100%;
+    height: 100%;
     background: rgba(33, 150, 243, 0.9);
     display: flex;
     align-items: center;
@@ -57,6 +60,7 @@
     transform: scaleY(0);
     transform-origin: bottom;
     transition: 0.5s;
+    flex-wrap: wrap;
   }
 
   &__item:hover .album__item-overlay {
@@ -64,8 +68,9 @@
   }
 
   &__image {
-    width: 370px;
-    height: 294px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
   }
 
   &__name {

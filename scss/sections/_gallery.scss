@@ -1,5 +1,10 @@
 .gallery {
   margin-bottom: 94px;
+  @media (max-width: 1199px) {
+    display: none;
+    opacity: 0;
+    pointer-events: none;
+  }
 
   &__list {
     display: flex;
@@ -16,6 +21,7 @@
 
   &__title {
     @include section-title();
+    margin-top: 0;
   }
 
   &__img {
