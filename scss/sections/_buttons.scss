@@ -1,5 +1,8 @@
 .buttons {
   padding-top: 94px;
+  @media (max-width: 1199px) {
+    padding-top: 60px;
+  }
 
   &__list {
     width: 575px;

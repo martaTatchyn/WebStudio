@@ -8,14 +8,17 @@
     display: flex;
     gap: 70px;
     align-items: center;
+    padding: 60px 0;
     @media (max-width: 1199px) {
       flex-wrap: wrap;
       justify-content: center;
       gap: 60px;
+      padding: 0;
     }
     @media (max-width: 767px) {
       flex-direction: column;
       gap: 60px;
+      padding: 0;
     }
   }
 

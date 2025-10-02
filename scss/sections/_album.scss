@@ -24,24 +24,30 @@
     position: relative;
     list-style: none;
     border: 1px solid #eee;
-    width: 100%;
-    height: 100%;
+    width: 370px;
+    height: 404px;
     background: #fff;
     display: inline-block;
     overflow: hidden;
+    @media (max-width: 1199px) {
+      width: 354px;
+      height: 440px;
+    }
+    @media (max-width: 767px) {
+      width: 450px;
+      height: 404px;
+    }
   }
 
   &__item:hover {
-    list-style: none;
-    border: 1px solid #eee;
-    width: 370px;
-    height: 404px;
     box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16),
       0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-    background: #fff;
-    display: inline-block;
     cursor: pointer;
     transition: 0.3s;
+  }
+
+  &__image--wraper {
+    position: relative;
   }
 
   &__item-overlay {
@@ -63,7 +69,7 @@
     flex-wrap: wrap;
   }
 
-  &__item:hover .album__item-overlay {
+  &__item:hover &__item-overlay {
     transform: scaleY(1);
   }
 

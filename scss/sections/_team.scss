@@ -2,10 +2,15 @@
   background: #f5f4fa;
   padding-bottom: 94px;
   padding-top: 94px;
+  @media (max-width: 1199px) {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
 
   &__title {
     @include section-title();
     margin-bottom: 50px;
+    margin-top: 0;
   }
 
   &__list {

@@ -2,17 +2,24 @@
   background-color: rgba(47, 48, 58, 0.4);
   margin: 0 auto;
   height: 600px;
-  @media (max-width: 767px) {
+  @media (max-width: 1199px) {
     height: 400px;
   }
 }
 
 .hero {
-  background: url(../w1/people.jpg) center/cover no-repeat;
+  background-image: image-set(url(../../w1-images/hero/hero-desk.webp) 1x, url(../../w1-images/hero/hero-desk@4x.webp) 2x);
+  background-position: center;
+  background-size: cover; 
+  background-repeat: no-repeat;
   margin: 0 auto;
   height: 600px;
-  @media (max-width: 767px) {
+  @media (max-width: 1199px) {
+    background-image: image-set(url(../../w1-images/hero/hero-tab.webp) 1x, url(../../w1-images/hero/hero-tab@4x.webp) 2x);
     height: 400px;
+  }
+  @media (max-width: 767px) {
+    background-image: image-set(url(../../w1-images/hero/hero-mob.webp) 1x, url(../../w1-images/hero/hero-mob@4x.webp) 2x);
   }
 
   &__title {
@@ -27,11 +34,11 @@
     justify-content: center;
     margin: auto;
     padding: 200px 0 30px;
-    @media (max-width: 767px) {
+    @media (max-width: 1199px) {
       font-weight: 900;
       font-size: 26px;
       line-height: 162%;
-      padding: 118px 0 30px;
+      padding-top: 118px;
     }
   }
 
